@@ -84,17 +84,58 @@
 //   console.log(" ")
 // }
 // }
-let z = {
-  name: "aditi",
-  language: "javascript"
-}
-console.log(z)
+// let z = {
+//   name: "aditi",
+//   language: "javascript"
+// }
+// console.log(z)
 
-let a = {
-    run :  ()=>{
-        alert("helllooooooooooo")
-    }
+// let a = {
+//     run :  ()=>{
+//         alert("helllooooooooooo")
+//     }
+// }
+
+// z._____proto________= a
+// con
+
+// let a = [3,2, 3 ,2 ]
+
+
+// //////for of///
+// for(let i of a ){
+// console.log(i)
+// }
+
+// let as = "aditi";
+//  let arr = Array.from(as)
+// console.log(arr)
+// // typeof(as)
+
+// for (i=0; i<3; i++){
+//   consol
+
+const ad = {
+  aditi: 77,
+  aditya: 67,
+  afjijj: 48,
+  ffhhh: 99,
+  namm: 100,
 }
 
-z._____proto________= a
-con
+for(let a in ad ){
+  console.log("marks of students " +   a    +  ad [a])
+} 
+
+
+let  w = [1,2,3,1,2, 3]
+
+
+for(let i of w){
+console.log ( i)
+
+}
+
+// w.forEach((element)=>{
+//   console.log(element*element)
+// })
