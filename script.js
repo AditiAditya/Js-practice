@@ -115,27 +115,81 @@
 // for (i=0; i<3; i++){
 //   consol
 
-const ad = {
-  aditi: 77,
-  aditya: 67,
-  afjijj: 48,
-  ffhhh: 99,
-  namm: 100,
-}
+// const ad = {
+//   aditi: 77,
+//   aditya: 67,
+//   afjijj: 48,
+//   ffhhh: 99,
+//   namm: 100,
+// }
 
-for(let a in ad ){
-  console.log("marks of students " +   a    +  ad [a])
-} 
-
-
-let  w = [1,2,3,1,2, 3]
+// for(let a in ad ){
+//   console.log("marks of students " +   a    +  ad [a])
+// } 
 
 
-for(let i of w){
-console.log ( i)
+// let  w = [1,2,3,1,2, 3]
 
-}
+
+// for(let i of w){
+// console.log ( i)
+
+// }
 
 // w.forEach((element)=>{
 //   console.log(element*element)
 // })
+
+
+
+///////////////22 05//////////////////
+
+// class railwayforms{
+//   constructor(){
+//     console.log("constructor aagya")
+//   }
+//   submit(){
+//     alert("your form has been submitted")
+//   }
+//   cancel(){
+//     alert("your form has been canceled")
+//   }
+
+// }
+// let aditi = new railwayforms()
+
+// let ddd = new railwayforms()
+// let ss = new railwayforms()
+// aditi.submit();
+// ddd.submit();
+// ss.cancel();
+
+class cats  {
+constructor(name , colour){
+  this.name = name;
+  this.colour= colour;
+
+}
+run(){
+  console.log  (this.name + "is" + 'running')
+}
+shout(){
+  console.log  (this.name + "is" + 'CRYING')
+}
+}
+
+class dog extends cats {
+  jump(){
+    console.log("he is jumping" + this.name +  888+this.colour)
+  }
+
+  laugh(){
+    console.log(`${this.name } is laughing`)
+  }
+}
+
+let any  = new cats("meow" ,  "green")
+let typer = new dog("aaoo" ,'red')
+
+any.shout()
+typer.jump()
