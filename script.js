@@ -164,32 +164,86 @@
 // ddd.submit();
 // ss.cancel();
 
-class cats  {
-constructor(name , colour){
-  this.name = name;
-  this.colour= colour;
+// class cats  {
+// constructor(name , colour){
+//   this.name = name;
+//   this.colour= colour;
 
-}
+// }
+// run(){
+//   console.log  (this.name + "is" + 'running')
+// }
+// shout(){
+//   console.log  (this.name + "is" + 'CRYING')
+// }
+// }
+
+// class dog extends cats {
+//   jump(){
+//     console.log("he is jumping" + this.name +  888+this.colour)
+//   }
+
+//   laugh(){
+//     console.log(`${this.name } is laughing`)
+//   }
+// }
+
+// let any  = new cats("meow" ,  "green")
+// let typer = new dog("aaoo" ,'red')
+
+// any.shout()
+// typer.jump()
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// class employess {
+//   constructor(){
+//     console.log(`new constructor`)
+//   }
+//   loginin (){
+//     console.log(`employess logined in`);
+//   }
+//   logout(){
+//     console.log(`employess logiedout`)
+//   }
+//   requestedleaves (leaves){
+//     console.log(`asking for ${leaves}`)
+//   }
+// }
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// class office extends employess{
+//   constructor(){
+//     console.log(`2 c0nstructor`)
+//   }
+//   extraleaves(x){
+//     clonsole.log(`asking for ${x}`)
+//   }
+
+//   requestedleaves (leaves){
+//     console.log(`asking for ${leaves + 1} (one extra)`)
+//   }
+// }
+
+// let a = new office()
+// a.loginin()
+// a.requestedleaves()
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Animal {
+  constructor(name){
+    this.name = Animal.capitalize (name)
+  }
 run(){
-  console.log  (this.name + "is" + 'running')
-}
-shout(){
-  console.log  (this.name + "is" + 'CRYING')
-}
+  alert("Animal" + this.name +"is running")
 }
 
-class dog extends cats {
-  jump(){
-    console.log("he is jumping" + this.name +  888+this.colour)
-  }
-
-  laugh(){
-    console.log(`${this.name } is laughing`)
-  }
+static capitalize(name){
+  return name.charAt(0).toUpperCase() +name.substr(1 , name.length)
 }
 
-let any  = new cats("meow" ,  "green")
-let typer = new dog("aaoo" ,'red')
+}
 
-any.shout()
-typer.jump()
+a = new Animal("xyz")
+a.run()
+
