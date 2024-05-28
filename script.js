@@ -181,3 +181,71 @@
 // s.then((value)=>{
 //   console.log(value)
 // })
+
+//////////////////////////////        error handling   ////////////////////////////////////////////////////////
+
+
+// setTimeout(() => {
+//     console.log("i am hacking u ...........")
+// }, 1000);
+
+// try{
+//     console.log (ritik)
+// }
+
+// catch(error){
+// console.log("balle balle")
+// }
+
+// setTimeout(() => {
+//     console.log("u are hacked \'aditya \'.....")
+// }, 3000);
+
+// setTimeout(() => {
+//     console.log("Now give me your account no ")
+// }, 5000);
+
+
+// setTimeout(() => {
+//     console.log("i cradit all your money")
+// }, 6000);
+
+// try {
+//     let age = prompt("entre your age !!")
+//     age = Number.parseInt(age)
+//     if(age>100){
+//   throw new ReferenceError("your are so luckey")
+
+//     }
+
+//     else{
+//         console.log("pretty young u are")
+//     }
+//     console.log(aditi)
+//    throw new ReferenceError("aditi is very rich")
+// } catch (error) {
+// console.log(error . name)
+// console.log(error.message)
+// }
+
+// console.log("running")
+
+const p=   ()=>  {
+try {
+    let a = 23
+    
+    console.log("chal rha h code ")
+return
+
+} catch (error) {
+    console.log("nhi chal rha h code")
+}
+
+finally{
+    console.log ("chalna he chalna h issko ")
+}
+
+}
+
+p()
+console.log("aur sab badhiya")
