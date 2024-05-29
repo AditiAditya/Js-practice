@@ -230,22 +230,50 @@
 
 // console.log("running")
 
-const p=   ()=>  {
-try {
-    let a = 23
+// const p=   ()=>  {
+// try {
+//     let a = 23
     
-    console.log("chal rha h code ")
-return
+//     console.log("chal rha h code ")
+// return
 
-} catch (error) {
-    console.log("nhi chal rha h code")
+// } catch (error) {
+//     console.log("nhi chal rha h code")
+// }
+
+// finally{
+//     console.log ("chalna he chalna h issko ")
+// }
+
+// }
+
+// p()
+
+// console.log("aur sab badhiya")
+
+// let age= prompt("what is your age ???")
+// age = Number.parseInt(age)
+let runagain = true;
+
+
+const Cardrive=(age)=>{
+return age>=18?true:false
 }
 
-finally{
-    console.log ("chalna he chalna h issko ")
+
+while (runagain) {
+    let age= prompt("what is your age ???")
+age = Number.parseInt(age)
+if (age<0){
+    console.error("pls enter valid age ")
+    break;
 }
 
+if(Cardrive(age)){
+    alert("yes u can drive >>>>.")
 }
-
-p()
-console.log("aur sab badhiya")
+else{
+    alert("you cant drive ")
+}
+runagain = confirm("do u want to see again")
+}
