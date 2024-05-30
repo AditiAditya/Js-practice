@@ -1,26 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+
+html,body {
     width: 100%;
     height: 100%;
-    position: relative;
+  
 }
 
-h1{
-   font-size: 40px;
-   margin-top: 50px;
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#bg {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1508867743401-21ad68d105b1?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
-p{
 
-    margin-top: 20px;
+h1 {
+    font-size: 40px;
+    padding-top: 10px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+
+font-weight: 900;
+   padding-top: 20px;
     margin-left: 20px;
     font-size: 20px;
 }

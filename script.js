@@ -253,27 +253,62 @@
 
 // let age= prompt("what is your age ???")
 // age = Number.parseInt(age)
-let runagain = true;
+// let runagain = true;
 
 
-const Cardrive=(age)=>{
-return age>=18?true:false
-}
+// const Cardrive=(age)=>{
+// return age>=18?true:false
+// }
 
 
-while (runagain) {
-    let age= prompt("what is your age ???")
-age = Number.parseInt(age)
-if (age<0){
-    console.error("pls enter valid age ")
-    break
-}
+// while (runagain) {
+//     let age= prompt("what is your age ???")
+// age = Number.parseInt(age)
+// if (age<0){
+//     console.error("pls enter valid age ")
+//     break
+// }
 
-if(Cardrive(age)){
-    alert("yes u can drive >>>>.")
-}
-else{
-    alert("you cant drive ")
-}
-runagain = confirm("do u want to see again")
-}
+// if(Cardrive(age)){
+//     alert("yes u can drive >>>>.")
+// }
+// else{
+//     alert("you cant drive ")
+// }
+// runagain = confirm("do u want to see again")
+// }
+
+
+/////////////////////////////  theym are just loop   ////////////////////////////
+// let  sum =0
+// let a = prompt("value de ")
+// a= Number.parseInt(a)
+
+
+// for( let i=0; i<a; i++ ){
+//     console.log(i)
+// }
+
+// let a1 ={
+//     a:2,
+//     b:3,
+//     d:4
+
+// }
+
+// for(let a in a1){
+//     console.log("marks of students  " +  "   is   " + a + "  and    " +   a1[a])
+// }
+
+
+///////////////////////////////  loop with arrey ///////////////////////
+// let a1 = [2,3,4,5]
+
+// a.forEach((elements)=>{
+//     console.log(elements)
+// })
+
+
+// let a = first . getAttribute("class")
+// console.log(a)
+
