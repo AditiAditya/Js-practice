@@ -312,3 +312,109 @@
 // let a = first . getAttribute("class")
 // console.log(a)
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// let a = ()=>{
+// return new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//      resolve(456)
+//     },2000)
+// })
+// }
+
+//  (async()=>{
+//      let b = await a ();
+//      console.log(b)
+//      let c = await a ()
+//      console.log(c)
+//      let d = await a ()
+//      console.log(d)
+// })()
+////////////////////////////////////////////////////////////upper wla code nhi chal rhe h /////////////////////////////////////////////////////////////////
+// let arr = [2,3,4,4,5,6,7,8,9]
+// let  [a,...rest]= arr
+// console.log(a,rest)
+
+// let obj = {
+//     name: "aditi" ,
+//     add: "qwe",
+//     rollno: 22
+
+// }
+// console.log({ ...obj, name : "hew"  })
+// // console.log({ name : "hew" , ...obj })
+// let arr = [1, 2, 3, 4]
+// console.log("aditi " , arr)
+
+// message = "good world"
+
+// function hello1(){
+//    let message = "good evening"
+    
+//         // let message = "hey tobba tobaa"
+//         console.log("hello" + message)
+    
+//  console.log(message)
+
+
+// let c = function hello2(){
+//  console.log(" i am c" + message)
+// }
+
+// return c
+
+// }
+
+// c = hello1()
+// c()
+
+// function returnfunction (){
+// let x = () => {
+//     let a = 1
+//     console.log(a)
+//     let y = () =>{
+//         // let b = 2
+//         console.log(a)
+//         let z = () => {
+//             // let c = 3
+//             console.log(a)
+//         }
+//       a = 445
+//         z()
+//     }
+//     a = 3333
+//     y()
+// }
+// return x
+
+// }
+
+// let a = returnfunction()
+// a()
+
+
+//// ***************************      Arrow functions [ let a = () =>{}  ]  yhe wle hote h   ***********************
+
+/******************************      clouser is a function along with its luxical environment     **********************/
+
+const a = ( name,greeting )   =>  console.log(  greeting + "  " + name)
+
+// a("adii" , "good afternoo")
+
+let x = {
+    name : 'aditi',
+    role: 'senior developer',
+    experince: 1,
+
+show : function () {
+    // let then = this
+    // console.log(this)
+    setTimeout( ()=>  {
+        console.log(`kya he bolu  ${this.name} aapke aage koi bol sakta h kya .......... \nAditi behnnnnnnnnnnnnnn`)
+    }, 2000);
+
+}
+}
+
+// console.log(x.name , x.experince)
+
+x.show()
