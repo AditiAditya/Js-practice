@@ -313,22 +313,22 @@
 // console.log(a)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// let a = ()=>{
-// return new Promise((resolve, reject) => {
-//     setTimeout(()=>{
-//      resolve(456)
-//     },2000)
-// })
-// }
+let a = ()=>{
+return new Promise((resolve, reject) => {
+    setTimeout(()=>{
+     resolve(456)
+    },2000)
+})
+}
 
-//  (async()=>{
-//      let b = await a ();
-//      console.log(b)
-//      let c = await a ()
-//      console.log(c)
-//      let d = await a ()
-//      console.log(d)
-// })()
+ (async()=>{
+     let b = await a ();
+     console.log(b)
+     let c = await a ()
+     console.log(c)
+     let d = await a ()
+     console.log(d)
+})()
 ////////////////////////////////////////////////////////////upper wla code nhi chal rhe h /////////////////////////////////////////////////////////////////
 // let arr = [2,3,4,4,5,6,7,8,9]
 // let  [a,...rest]= arr
@@ -396,25 +396,26 @@
 
 /******************************      clouser is a function along with its luxical environment     **********************/
 
-const a = ( name,greeting )   =>  console.log(  greeting + "  " + name)
+// const a = ( name,greeting )   =>  console.log(  greeting + "  " + name)
 
-// a("adii" , "good afternoo")
+// // a("adii" , "good afternoo")
 
-let x = {
-    name : 'aditi',
-    role: 'senior developer',
-    experince: 1,
+// let x = {
+//     name : 'aditi',
+//     role: 'senior developer',
+//     experince: 1,
 
-show : function () {
-    // let then = this
-    // console.log(this)
-    setTimeout( ()=>  {
-        console.log(`kya he bolu  ${this.name} aapke aage koi bol sakta h kya .......... \nAditi behnnnnnnnnnnnnnn`)
-    }, 2000);
+// show : function () {
+//     // let then = this
+//     // console.log(this)
+//     setTimeout( ()=>  {
+//         console.log(`kya he bolu  ${this.name} aapke aage koi bol sakta h kya .......... \nAditi behnnnnnnnnnnnnnn`)
+//     }, 2000);
 
-}
-}
+// }
+// }
 
 // console.log(x.name , x.experince)
 
-x.show()
+// x.show()
+
