@@ -313,22 +313,22 @@
 // console.log(a)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-let a = ()=>{
-return new Promise((resolve, reject) => {
-    setTimeout(()=>{
-     resolve(456)
-    },2000)
-})
-}
+// let a = ()=>{
+// return new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//      resolve(456)
+//     },2000)
+// })
+// }
 
- (async()=>{
-     let b = await a ();
-     console.log(b)
-     let c = await a ()
-     console.log(c)
-     let d = await a ()
-     console.log(d)
-})()
+//  (async()=>{
+//      let b = await a ();
+//      console.log(b)
+//      let c = await a ()
+//      console.log(c)
+//      let d = await a ()
+//      console.log(d)
+// })()
 ////////////////////////////////////////////////////////////upper wla code nhi chal rhe h /////////////////////////////////////////////////////////////////
 // let arr = [2,3,4,4,5,6,7,8,9]
 // let  [a,...rest]= arr
@@ -419,3 +419,16 @@ return new Promise((resolve, reject) => {
 
 // x.show()
 
+
+/////////////////////          EXERCISE       /////////////////////////////////////
+
+// const array = firstvalue => {
+// return firstvalue[0]
+// }
+
+// let firstvalue = [1,2,3,4,5,6]
+// console.log(array(firstvalue))
+
+const k = (a,b) => a===100 ||b===100 || (a+b) === 100|| ((a,b)>=100)
+
+console.log(k(60,100))
