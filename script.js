@@ -429,6 +429,49 @@
 // let firstvalue = [1,2,3,4,5,6]
 // console.log(array(firstvalue))
 
-const k = (a,b) => a===100 ||b===100 || (a+b) === 100|| ((a,b)>=100)
+// const k = (a,b) => a===100 ||b===100 || (a+b) === 100|| ((a,b)>=100)
 
-console.log(k(60,100))
+// console.log(k(60,100))
+
+////////////     logical opreters     ////////////////////////////
+
+
+// &&  DONO MAIN SE DONO HE SHI HONE CHIYE TAB COD AAGE CHLEGA 
+// let  temp = 30;
+// if(temp > 0 && temp <= 30){
+//     console.log("weather is nice ")
+// }
+// else{
+// console.log("temperature is not goood")
+// }
+
+
+
+//  ||| OR 
+// let  temp = -3;
+// if(temp <= 0  ||  temp >= 30){
+//     console.log("weather is'nt nice ")
+// }
+// else{
+// console.log("temperature is  goood")
+// }
+
+
+///////    reverse method ///////
+
+// const b = "kartik"
+// let splitb = b.split("");
+// let reverseb = splitb.reverse("")
+// let joinb = reverseb.join("")
+// console.log(joinb)
+
+// async function harry(){
+//     return 5
+// }
+// harry().then((x) => {
+// alert(x)
+// })
+
+////////////  USING THE FETCH APIII   / ///////////////////////////////
+
+LET P = 
