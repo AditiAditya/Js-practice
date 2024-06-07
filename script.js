@@ -131,3 +131,49 @@
 // }
 
 // console.log(aditi('apple'))
+
+///////////////////////////////
+
+// function ret(src){
+//     src.split("").foreach(function (elem){
+//      if(occurences.hasOwnProperty(elem)===false)
+//        occurences[elem]= 1
+//     }
+//         else
+//      })
+// }
+
+
+/////// question add a array/
+//by for loop 
+// let a = [1,2,3,4,5,6,7,8,9,]
+// let sum = 0 ;
+// for(let i = 0 ; i< a.length ; i++){
+//     sum+= a[i]
+// }
+// console.log(sum)
+
+// BY FOREACH LOOP 
+// let num = [1,2,4,6,7,] 
+// let sum = 0
+// // num.forEach((num1)=>{
+// //     sum+=num1
+// // })
+// // console.log(sum)
+
+// num.forEach((elem)=>{
+//     sum += elem
+// })
+// console.log(sum)
+
+////////////////////////question write only no not string at all
+let a = [ 1,2,3,4,5,"aditi" , true , " rinkiya ke papa " , 8 , false , true ]
+let s = [];
+let sum = 0
+a.forEach(element => {
+    if (typeof(element)==="number") {
+        s.push(element)
+        sum = sum + element
+    }
+});
+console.log(sum)
