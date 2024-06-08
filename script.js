@@ -99,10 +99,15 @@
 //OR DIRECT BHI KR SKTE  H CONSOLE PER      Number.isInteger(value de kr )  
 
 ///question 5 
-// let e = [1,2,3,4,5,6,7,8,9,]
-//  e.concat(e)
-// console.log()
 
+// function q(a){
+// return a.concat(a)
+// }
+// console.log(q([1,2,3,4])) 
+
+// let a = [1,2,3,4]
+// let e = a.concat(a)
+// console.log(e)
 
 //question 6 
 // function  a(num){
@@ -167,13 +172,83 @@
 // console.log(sum)
 
 ////////////////////////question write only no not string at all
-let a = [ 1,2,3,4,5,"aditi" , true , " rinkiya ke papa " , 8 , false , true ]
-let s = [];
-let sum = 0
-a.forEach(element => {
-    if (typeof(element)==="number") {
-        s.push(element)
-        sum = sum + element
+// let a = [ 1,2,3,4,5,"aditi" , true , " rinkiya ke papa " , 8 , false , true ]
+// let s = [];
+// let sum = 0
+// a.forEach(element => {
+//     if (typeof(element)==="number") {
+//         s.push(element)
+//         sum = sum + element
+//     }
+// });
+// console.log(sum)
+
+///////  2   EXWRCISE QUESTION; //////////////////////////
+// let a = [1,2,3,4,5,6,7,8,9] 
+// let sum = 0;
+// a.forEach(elem => {
+//     sum += elem
+// });
+// console.log(sum)
+
+//  1  //
+// let num = [18,22,33,73,99,68,13]
+// let mine = Math.min(...num)
+// console.log(mine)
+
+// 3  ye nhi hua average wla 
+// let value = [ 1,2,34,5,6,7,]
+// let sum = 0
+// for(let i=0;i<=value.length ; i++){
+//     sum+= value[i]
+//    return sum/value.length
+// }
+
+//  to finnd specific valuee 
+// let aditi = [1,2,'aee', 'hey' , 5,6,7,8]
+// console.log(aditi.includes (  82 )  )
+
+
+//  duplicate hatane ke liye /
+// let arr = [1,2,2,3,4,5,4,5,'aple', 'mango','aple',3]
+// function arrw(arr) {
+//     return [...new Set(arr)]
+// }
+// console.log(arrw(arr));
+
+/////
+// let arr = [1,2,2,3,4,5,4,5,'aple', 'mango','aple']
+// arr.reverse(arr)
+// console.log(arr)
+///////////////  asending order main  or decnding main 
+// let arr = [1,2,2,3,4,5,4,5,'aple', 'mango','wple' , 'kite ' , 'qqee']
+// arr.sort()
+// arr.reverse()
+// console.log(arr)
+
+/////////  merge two sorted array // some error
+// let a1 = [1,4,2,5,3]
+// let a2 = [,6,9, 2,7,8]
+// a1.sort()
+// a2.sort()
+// a1.concat(a2)
+// let a3 = a1 +   a2
+
+// console.log(a3)
+// // position of array 
+// let a1 = ['aditi' , 'aer' , 'ketf' , "mwer" , 'lwe' , 'nnn' ]
+// let k = a1.indexOf('lwe')
+// console.log(k)
+
+// //// Occurences of valuse 
+let a1 = [1,4,2,5,3,3,4,5,6,7,8,1, 'aditi',  8, "kitw", "yelloj"]
+let b1 = {}
+for (const i of a1) {
+    if ( a1[i] in b1) {
+        b1[a1[i]] = b1[a1[i]] + 1
+    } else {
+        b1[a1[i]] = 1
     }
-});
-console.log(sum)
+}
+
+console.log(b1);
