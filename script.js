@@ -42,7 +42,7 @@
 ////////////     logical opreters     ////////////////////////////
 
 
-// &&  DONO MAIN SE DONO HE SHI HONE CHIYE TAB COD AAGE CHLEGA 
+// &&  DONO MAIN SE       *DONO HE SHI HONE CHIYE *    TAB COD AAGE CHLEGA 
 // let  temp = 30;
 // if(temp > 0 && temp <= 30){
 //     console.log("weather is nice ")
@@ -206,7 +206,7 @@
 
 //  to finnd specific valuee 
 // let aditi = [1,2,'aee', 'hey' , 5,6,7,8]
-// console.log(aditi.includes (  82 )  )
+// console.log(aditi.includes ( 7 )  )
 
 
 //  duplicate hatane ke liye /
@@ -241,14 +241,69 @@
 // console.log(k)
 
 // //// Occurences of valuse 
-let a1 = [1,4,2,5,3,3,4,5,6,7,8,1, 'aditi',  8, "kitw", "yelloj"]
-let b1 = {}
-for (const i of a1) {
-    if ( a1[i] in b1) {
-        b1[a1[i]] = b1[a1[i]] + 1
-    } else {
-        b1[a1[i]] = 1
-    }
-}
+// let a1 = [1,4,2,5,3,3,4,5,6,7,8,1, 'aditi',  8, "kitw", "yelloj"]
+// let b1 = {}
+// for (const i of a1) {
+//     if ( a1[i] in b1) {
+//         b1[a1[i]] = b1[a1[i]] + 1
+//     } else {
+//         b1[a1[i]] = 1
+//     }
+// }
 
-console.log(b1);
+// console.log(b1);
+
+////////////////////////////  duplicate hataya + assending order main likha   ///////////////
+// let a1 = [1,4,2,5,3,3,4,5,6,7,8,1]
+// function new1(a1){
+//     return [...new Set(a1)]
+// }
+// a1.sort((a,b) => a-b)
+// console .log(new1(a1))
+
+///////////////////////////////    second largest no  with using of sort methodds /// 
+// let a1 = [1,4,2,5,3,3,4,5,16,17,8,1]
+// a1.sort((a,b) => b-a)
+// console.log(a1)
+// console.log(a1[1])
+
+/////////// by another method
+// let a1 = [1,4,2,5,3,3,4,5,16,17,8,1]
+// let  first = -Infinity ;
+// let second = -Infinity
+// for(let i=0 ; i<=a1.length-1; i++) {
+//   if (a1[i]>first) {
+//     second = first
+//     first = a1[i]
+//   } 
+// }
+// console.log(second)  ///////////////////////////// look abhi raj video for this/////
+
+//////////////////////////// even odd median     /////////////////
+// let num = [1,2,3,7,4,5]
+// num.sort((a,b) => a-b)
+// let median;
+//     if (num.length%2 !=0) {
+//         let into = Math.floor(num.length/2)
+//         median = num[into]
+//     } else {
+//             let into = Math.floor(num.length/2)
+//             median = (num[into]  +  num[into -1] )/2
+//     }
+// console.log(median)
+/////////////////////////////////////////////////////////////////////  reverse methoddddd
+// let num = [1,2,9,3,5]
+// num.sort((a,b) => a-b)
+// let median;
+//     if (num.length%2 ===0) {
+//        let into = Math.floor(num.length/2)
+//        median = (num[into] + num[into - 1])/2
+//     } else {
+//             let into = Math.floor(num.length/2)
+//             median = num[into]
+//     }
+// console.log(median)             //////////////////////  ye galat aaa rha h ////////////////
+
+//////////////////////////////////////////// sepicific no find krne ke liye /// true or false main ans aata hai iska 
+// let na = [1,2,9,3,5, 'aditi'  , 4 , "raju" , "kana"]
+// console.log(na.includes(8))
