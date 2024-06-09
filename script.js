@@ -307,3 +307,8 @@
 //////////////////////////////////////////// sepicific no find krne ke liye /// true or false main ans aata hai iska 
 // let na = [1,2,9,3,5, 'aditi'  , 4 , "raju" , "kana"]
 // console.log(na.includes(8))
+//////////////////////
+let a = {
+     name : 'aditi'
+}
+console.log(a)
