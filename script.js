@@ -308,7 +308,89 @@
 // let na = [1,2,9,3,5, 'aditi'  , 4 , "raju" , "kana"]
 // console.log(na.includes(8))
 //////////////////////
-let a = {
-     name : 'aditi'
-}
-console.log(a)
+// let a = {
+//      name : 'aditi'
+// }
+// console.log(a)
+
+///////////////////////////// remove sepecific value  using of pop push slice splice
+// let a = [1,2,3,4,5,6,7];  /// push  add the element in the endd /// pop remove the value from the end 
+//  a.splice(1,3, )    /// slice()  two parts main he cut hote h (1,3) jo third index h woh include nhi hoge aur ye nhi array  main aajayega
+// console.log(a)          /// splice   main (first starting point , kya delet krna h  ,  "kya daln H ")
+                                     //// shift( ) remove th first elemeents in js 
+
+
+//primitive data type  -- boolean null nmber  stirng 
+// let a = "aditi";
+// let b  = a;
+// b = "abhi"
+// console.log(a)
+//  NON --- primitive data type  ---- array ,, object 
+// let obj =  {
+//      name : 'aditi',
+//      class : "pass ",
+//      pass : 255
+// }
+
+// let obj2 = obj;
+// obj2.name = "shilpa"
+// console.log(obj2)
+// console.log(obj)
+
+ //// to find frequency  elements
+//  let q = [1,2,3,1,2,3,1,2,3,1,1,1,]
+//  let w = {}
+
+//  q.forEach(elem => {
+//      if (!w[elem]) {
+//           w[elem] = 1
+//      } else {
+//           w[elem] = w[elem] + 1
+//      }
+//  });
+//  console.log(w)
+
+// let q = [1,2,3,1,2,3,1,]
+// let w = {}
+// for (const i of q) {
+//      if (w[i]) {
+//          w[i] +=1
+//      } else {
+//           w[i] =  1
+//      }
+// }
+// console.log(w)
+
+//////////////   first and last elements of an array 
+// let a = ["adiiti" , "raj" , 1, 3,4, "hum "]
+// let r = a.pop()
+// a.shift()
+// console.log(r)
+// console.log(a.shift())
+/////////////////////////
+// let a = ["adiiti" , "raj" , 1, 3,4, "hum "]
+// let w = {}
+// for(let i of w) {
+//   a.concat(w)
+// }
+// console.log(a)
+////////////////   to find all falsy values    only one  method is use in this 
+// let a = ["" , "raj" , 1, 3,4,  undefined, null, 3 , 6 ,"", 9]
+// let w = a.filter(Boolean)
+// console.log(w)
+//////////////////////      To check positive no 
+let no = [ 1,2,3,4,-2,-3,-5,-6,-7,-5,5,3,7,3,-4]
+// function aee(no){
+//      let no1 = no.filter(x=>x>-1)
+// }
+// console.log(no)
+// no.sort(function(a,b) {
+//      return b - a;
+//   });
+//   let x = no.length
+//   for (x; x--;) {
+//      if ( no[x] < 0 ){
+//         no.pop();
+//      }
+//   }
+//   console.log(no)
