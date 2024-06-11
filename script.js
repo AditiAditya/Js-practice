@@ -1,208 +1,4 @@
-//// ***************************      Arrow functions [ let a = () =>{}  ]  yhe wle hote h   ***********************
 
-/******************************      clouser is a function along with its luxical environment     **********************/
-
-// const a = ( name,greeting )   =>  console.log(  greeting + "  " + name)
-
-// // a("adii" , "good afternoo")
-
-// let x = {
-//     name : 'aditi',
-//     role: 'senior developer',
-//     experince: 1,
-
-// show : function () {
-//     // let then = this
-//     // console.log(this)
-//     setTimeout( ()=>  {
-//         console.log(`kya he bolu  ${this.name} aapke aage koi bol sakta h kya .......... \nAditi behnnnnnnnnnnnnnn`)
-//     }, 2000);
-
-// }
-// }
-
-// console.log(x.name , x.experince)
-
-// x.show()
-
-
-/////////////////////          EXERCISE       /////////////////////////////////////
-
-// const array = firstvalue => {
-// return firstvalue[0]
-// }
-
-// let firstvalue = [1,2,3,4,5,6]
-// console.log(array(firstvalue))
-
-// const k = (a,b) => a===100 ||b===100 || (a+b) === 100|| ((a,b)>=100)
-
-// console.log(k(60,100))
-
-////////////     logical opreters     ////////////////////////////
-
-
-// &&  DONO MAIN SE       *DONO HE SHI HONE CHIYE *    TAB COD AAGE CHLEGA 
-// let  temp = 30;
-// if(temp > 0 && temp <= 30){
-//     console.log("weather is nice ")
-// }
-// else{
-// console.log("temperature is not goood")
-// }
-
-
-
-//  ||| OR 
-// let  temp = -3;
-// if(temp <= 0  ||  temp >= 30){
-//     console.log("weather is'nt nice ")
-// }
-// else{
-// console.log("temperature is  goood")
-// }
-
-
-///////    reverse method ///////
-//question1
-// const b = "kartik"
-// let splitb = b.split("");
-// let reverseb = splitb.reverse("")
-// let joinb = reverseb.join("")
-// console.log(joinb)
-
-// async function harry(){
-//     return 5
-// }
-// harry().then((x) => {
-// alert(x)
-// })
-
-////////////////////////////////
-
-//ouestion 2
-// let cartoon = ['sizuka', 'doreamon','bheem','motu']
-// console.log(Array.isArray(cartoon))
-// // console.log(cartoon)
-
-//question 3 
-// let a = [1,2,3,4,5,6,7,8,9]
-// a.length = []
-
-// question 4
-// let a = [3]
-// if (a%1===0) {
-//     console.log("yes it is integer")
-// } else {
-//     console,log("it is not integer")
-// }
-//OR DIRECT BHI KR SKTE  H CONSOLE PER      Number.isInteger(value de kr )  
-
-///question 5 
-
-// function q(a){
-// return a.concat(a)
-// }
-// console.log(q([1,2,3,4])) 
-
-// let a = [1,2,3,4]
-// let e = a.concat(a)
-// console.log(e)
-
-//question 6 
-// function  a(num){
-//    return Number(num.toString().split("").reverse().join(""))
-// }
-// console.log(a(23))
-
-// let a = "132"
-// let splita = a.split("")
-// let reversea = splita.reverse("")
-// let joina = reversea.join("")
-// console.log(joina)
-
-
-//// question 7 
-// function a(s){
-//  var reversed = s.split("").reverse().join("")
-//   return reversed===s
-// }
-
-// console.log(a('loop'))
-
-//question 8
-// function aditi(n){
-//    return n.split("").sort().join("")
-// }
-
-// console.log(aditi('apple'))
-
-///////////////////////////////
-
-// function ret(src){
-//     src.split("").foreach(function (elem){
-//      if(occurences.hasOwnProperty(elem)===false)
-//        occurences[elem]= 1
-//     }
-//         else
-//      })
-// }
-
-
-/////// question add a array/
-//by for loop 
-// let a = [1,2,3,4,5,6,7,8,9,]
-// let sum = 0 ;
-// for(let i = 0 ; i< a.length ; i++){
-//     sum+= a[i]
-// }
-// console.log(sum)
-
-// BY FOREACH LOOP 
-// let num = [1,2,4,6,7,] 
-// let sum = 0
-// // num.forEach((num1)=>{
-// //     sum+=num1
-// // })
-// // console.log(sum)
-
-// num.forEach((elem)=>{
-//     sum += elem
-// })
-// console.log(sum)
-
-////////////////////////question write only no not string at all
-// let a = [ 1,2,3,4,5,"aditi" , true , " rinkiya ke papa " , 8 , false , true ]
-// let s = [];
-// let sum = 0
-// a.forEach(element => {
-//     if (typeof(element)==="number") {
-//         s.push(element)
-//         sum = sum + element
-//     }
-// });
-// console.log(sum)
-
-///////  2   EXWRCISE QUESTION; //////////////////////////
-// let a = [1,2,3,4,5,6,7,8,9] 
-// let sum = 0;
-// a.forEach(elem => {
-//     sum += elem
-// });
-// console.log(sum)
-
-//  1  //
-// let num = [18,22,33,73,99,68,13]
-// let mine = Math.min(...num)
-// console.log(mine)
-
-// 3  ye nhi hua average wla 
-// let value = [ 1,2,34,5,6,7,]
-// let sum = 0
-// for(let i=0;i<=value.length ; i++){
-//     sum+= value[i]
-//    return sum/value.length
-// }
 
 //  to finnd specific valuee 
 // let aditi = [1,2,'aee', 'hey' , 5,6,7,8]
@@ -379,14 +175,14 @@
 // let w = a.filter(Boolean)
 // console.log(w)
 //////////////////////      To check positive no 
-let no = [ 1,2,3,4,-2,-3,-5,-6,-7,-5,5,3,7,3,-4]
-// function aee(no){
-//      let no1 = no.filter(x=>x>-1)
-// }
-// console.log(no)
-// no.sort(function(a,b) {
-//      return b - a;
-//   });
+// let no = [ 1,2,3,4,-2,-3,-5,-6,-7,-5,5,3,7,3,-4]
+// // function aee(no){
+// //      let no1 = no.filter(x=>x>-1)
+// // }
+// // console.log(no)
+// // no.sort(function(a,b) {
+// //      return b - a;
+// //   });
 //   let x = no.length
 //   for (x; x--;) {
 //      if ( no[x] < 0 ){
@@ -394,3 +190,32 @@ let no = [ 1,2,3,4,-2,-3,-5,-6,-7,-5,5,3,7,3,-4]
 //      }
 //   }
 //   console.log(no)
+
+//  10- question 
+// let a = prompt("please enter element")
+// function aee(a){
+// let reverse = a.split("").reverse().join("")
+// return reverse == a
+// }
+
+ 
+// console.log(aee(a))
+
+//////////////////////////////// 9 
+/// to reverse a string 
+// let a = prompt("What is your name ? ")
+// // let a  = {}
+// let a2 = a.split("").reverse().join("");
+// console.log(a2)
+
+// let number = prompt ("give only even no ")
+// let a = {}
+
+//     if (number/2===0) {
+//         console.log("yes")
+//     }
+
+// console.log(number)
+
+
+    
