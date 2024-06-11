@@ -209,13 +209,17 @@
 // console.log(a2)
 
 // let number = prompt ("give only even no ")
-// let a = {}
 
-//     if (number/2===0) {
-//         console.log("yes")
-//     }
+function arr(number){
+    if (number%2===0 ){
+      console.log("it is an even no buddy .. u are too good  ")
+    }else {
+        console.log("it is not even no ... what are u doing ")
+    }
+}
+console.log(arr (prompt("Give Even no buddy !!")))
 
-// console.log(number)
+
 
 
     
