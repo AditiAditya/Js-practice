@@ -217,7 +217,7 @@ function arr(number){
         console.log("it is not even no ... what are u doing ")
     }
 }
-console.log(arr (prompt("Give Even no buddy !!")))
+console.log(arr (prompt("Give Even no budy !!")))
 
 
 
