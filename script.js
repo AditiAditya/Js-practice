@@ -210,16 +210,52 @@
 
 // let number = prompt ("give only even no ")
 
-function arr(number){
-    if (number%2===0 ){
-      console.log("it is an even no buddy .. u are too good  ")
-    }else {
-        console.log("it is not even no ... what are u doing ")
-    }
+// function arr(number){
+//     if (number%2===0 ){
+//       console.log("it is an even no buddy .. u are too good  ")
+//     }else {
+//         console.log("it is not even no ... what are u doing ")
+//     }
+// }
+// console.log(arr(prompt("Give Even no budy !!"))) //////////  ye un degine de rha h 
+
+////////////////////////////////////////////
+// let num = prompt("give positive no ??")
+
+// if (num==0) {
+//   console.log ( `factorial of ${num} is 1`)
+// } else if(num<0){
+//   console.log(`neagative no is not alowed ${num}`)
+// }
+// else{
+//   let blanck = 1;
+// for (let index = 1 ; index <=num; index++) {
+//  blanck = blanck * index
+// //  console.log(`factorial of ${num}  is ${blanck}`) 
+// }
+// console.log(`factorial of ${num}  is ${blanck}`) 
+// }
+
+
+/////////////////////////////////////////////////////////
+let num = prompt("give any a prime  no ??")
+
+if(num == 1){
+  console.log(`${num} is not prime no `)
 }
-console.log(arr (prompt("Give Even no budy !!")))
-
-
-
-
-    
+if(num == 2){
+console.log("it is prime no ")
+}
+else if(num <= 0 ){
+console.log(`${num} no is invalid `)
+}
+else{
+  for(let i = 2 ; i <= num; i++)
+    if (num%i == 0) {
+      var res = `${num} is not prime no `
+      break
+    } else {
+      var res = `${num} is a prime no `
+     }
+console.log(res)
+}
