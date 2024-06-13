@@ -238,24 +238,80 @@
 
 
 /////////////////////////////////////////////////////////
-let num = prompt("give any a prime  no ??")
+// let num = prompt("give any a prime  no ??")
 
-if(num == 1){
-  console.log(`${num} is not prime no `)
-}
-if(num == 2){
-console.log("it is prime no ")
-}
-else if(num <= 0 ){
-console.log(`${num} no is invalid `)
-}
-else{
-  for(let i = 2 ; i <= num; i++)
-    if (num%i == 0) {
-      var res = `${num} is not prime no `
-      break
-    } else {
-      var res = `${num} is a prime no `
-     }
-console.log(res)
-}
+// if(num == 1){
+//   console.log(`${num} is not prime no `)
+// }
+// if(num == 2){
+// console.log("it is prime no ")
+// }
+// else if(num <= 0 ){
+// console.log(`${num} no is invalid `)
+// }
+// else{
+//   for(let i = 2 ; i <= num; i++)
+//     if (num%i == 0) {
+//       var res = `${num} is not prime no `
+//       break
+//     } else {
+//       var res = `${num} is a prime no `
+//      }
+// console.log(res)
+// }
+
+////////////////////////////////////////////////////////////////////////////
+//  REVISE THE PREVIOUS CODE 
+// let a = prompt("give name ")
+// function arr(a){
+//   let w = a.split("").reverse().join("")
+//    return w
+// }
+// console.log(arr(a))
+
+///////////////////////////////////
+// let a = prompt("give ")
+// function arr(a){
+//   let k = a.split("").reverse().join("")
+//   return k ===a
+// }
+// console.log(arr(a))
+
+////////////////////////////////////////////////////
+// let a = prompt("give value")
+// if (a%2==0) {
+//   console.log("it is even ")
+// } else {
+//   console.log("it is not")
+// }
+/////////////////////////////////////////////////
+// let a = [1,2,3,4,5,6,7,8,9,10]
+// let b =[];
+// let c = []
+// for (let i = 0; i < a.length; i++) {
+//   const element = a[i];
+//   if (element%2==0) {
+//     b.push(element)
+//   } else {
+//     c.push(element)
+//   }
+// }console.log(b )
+// console.log(c)
+/////////////////////////////////////////////////////////// factorial of 
+// let num = prompt("give any no")
+// if (num ==0) {
+//   console.log("its factorial is always 1")
+// }
+// else if(num<=0){
+// console.log("therre is no factorial of -ve no ")
+// }
+// else {
+//   var a1 = 1
+//   for (let i = 1; i <=num; i++) {
+//     a1 = a1* i
+//   console.log(` ${a1}`)
+// }
+// console.log(`{a1}  is that`)
+//   }
+
+
