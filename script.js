@@ -314,4 +314,31 @@
 // console.log(`{a1}  is that`)
 //   }
 
-
+//////////////////////////////
+//nested
+// for (let index = 1; index <=5; index++) {
+//       for (let index1 = 1; index1<=  index ;  index++) {
+       
+//      console.log(index1)
+//       } 
+// } 
+////////////////////////  prime no check 
+// let num = prompt("give prime no ??")
+// if (num<=1) {
+//       console.log("it is not prime no ..wheter it is prime or compositive no  ")
+// }
+// else if (num==2) {
+//       console.log("it is prime no")
+// }
+// else {
+//       for (let i= 2; i < num; i++) {
+//             if (num%i==0) {
+//                var r = `${num} it is not prime no `
+//                   break
+//             } else {
+//                   // console.log("ha ha prime h ")
+//                   var r = ` ${num} it is prime no `
+//             }
+//             console.log(r)
+//       }
+///////////////////////////////////////////////////////////////////////////
