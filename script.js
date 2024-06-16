@@ -331,7 +331,7 @@
 //       console.log("it is prime no")
 // }
 // else {
-//       for (let i= 2; i < num; i++) {
+//       for (let i= 2; i < num; i++) 
 //             if (num%i==0) {
 //                var r = `${num} it is not prime no `
 //                   break
@@ -341,4 +341,102 @@
 //             }
 //             console.log(r)
 //       }
-///////////////////////////////////////////////////////////////////////////
+//  1  ///////////////////////////////////////////////////////////////////////////
+// let num = prompt(" give any prime no  ")
+
+
+//     if (num==1) {
+//         console.log("its neither prime nor compositive ")
+//     } 
+    
+
+
+//   else if(num<1) {
+//         console.log("-ve no is not allowed")
+//     }
+    
+//     else {
+//         for (let i = 2; i <num ; i++) {
+           
+//             if (num%i==0) {
+//               var element= `${num}  is not prime no `
+//                 break
+//             } else {
+//                 var element = ` ${num}  is prime no `
+//             }
+            
+//         }console.log(element)
+        
+//     }
+
+
+////////////////////////////////////////////////////////////////
+// let a = [1,2,3,4,5,6,7,8,9,10]
+// let b =[];
+// let c = []
+// for (let i = 0; i < a.length; i++) {
+//   const element = a[i];
+//   if (element%2==0) {
+//     b.push(element)
+//   } else {
+//     c.push(element)
+//   }
+// }console.log(b )
+// console.log(c)
+
+//////////////////////////
+// var a = [1,2,3,4,5,6,7,8,9,10]
+// let a1 = a.filter((x)=> x%2)
+// console.log(a1)
+///////////////////////////////////////////////////////
+// let a =prompt("give any positive no ")
+// let number = Number.parseInt(a)
+
+
+// if (a<=0) {
+//     console.log("factorial of this no is not valid ")
+// } else if(a==1){
+// console.log("its factorial is always 1")
+
+// }
+// else {
+//     let b = 1
+//     for (let i= 1 ; i<= a;  i++) {
+//        if (a>1) {
+//         b = b*i
+//         console.log(` factorial of ${a} is  ${b}`)
+//         }
+//     }
+// }
+////////////////////////////////////////////////////////////////////////////
+// let a = prompt("give any word")
+// function arr(a){
+//     let B = a.split("").reverse()
+//     return B === a
+// }console.log(arr(a))
+////////////////////////////////////////////////////////////////
+// let a = prompt("give any word")
+// function arr(a) {
+//     let r = a.split("").reverse().join("")
+//     return r
+// }
+// console.log(arr(a))
+////////////////////////////////////////////////////////////////////////////
+// let a = prompt("give any word")
+
+// if (a<=0) {
+//     console.log("it  isnot valid")
+// } else if(a==1) {
+//     console.log("heyy its not even or oddd")
+// }else{
+//     if (a%2==0) {
+//         console.log('yes it is even ')
+//     } else {
+//         console.log("it is oddd")
+//     }
+// }
+
+// let a = ["adiiti" , "raj" , 1, 3,4, "hum ", 444, 67, 99 ]
+// // console.log(a)
+//  let a11  = a.splice(2, 1, "drum", "guitar")
+//  console.log(a11)
