@@ -435,8 +435,16 @@
 //         console.log("it is oddd")
 //     }
 // }
-
+/////////////////////////  ye nhi hua abhi 
 // let a = ["adiiti" , "raj" , 1, 3,4, "hum ", 444, 67, 99 ]
 // // console.log(a)
 //  let a11  = a.splice(2, 1, "drum", "guitar")
 //  console.log(a11)
+//////////////////////////////////////////////////////
+//  let a = [1,2,3,4,5,6,7,8,9,10]
+//  let b ={}
+// for (let i = 0; i<a.length; i++) {
+//     let num =  a[i];
+//     b[num] = b[num] ? b[num] +1 : 1;
+// }
+// console.log(b)
