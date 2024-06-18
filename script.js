@@ -468,6 +468,8 @@
 //     console.log(num)
 // }
 ///////////////// WRONG CODE UPPER //////////////////////////////////////////////let 
+
+
 // let word = prompt("give any word ")
 // let letter = prompt ("give any letter ")
 
