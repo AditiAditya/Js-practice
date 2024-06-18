@@ -481,7 +481,7 @@
 
 /////////////////////////////////////////   another method /////////////////////////////////////////////////
 // let a1 = [1,4,2,5,3,3,4,5,6,7,8,1, 'aditi',  8, "kitw", "yelloj"]
-// let b1 = {}
+// let b1 = []
 // for (let i = 0; i < a1.length; i++) {
 //     let num = a1[i];
 //         if ( num in b1) {
@@ -504,3 +504,22 @@
 // console.log(b)  
 
 
+//// practice of all 3 method ///
+// let a = prompt("hey give any word buddu ")
+// let b = prompt("give any letter ")
+// let c = []
+// for (let i = 0; i < a.length; i++) {
+//     let ele = a[i];
+//     if(ele==b){
+//        c++
+//     }
+// }console.log(c)
+
+
+
+let a = prompt("hey give any word buddu ")
+let b = prompt("give any letter ")
+for (let i= 0; i< a.length; i++) {
+    
+    
+}
