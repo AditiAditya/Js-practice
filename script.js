@@ -450,10 +450,57 @@
 // console.log(b)  
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
 // let a =   [1, 2, 3, 4, 5,  6, "NA" ,  4,  6,  5, 6, 5, 6,]    
 // console.log(a)
-// delete a [6 ]
+// let a1 =a.splice(6,2,'naha')
+// console.log(a1)
 
-// console.log(a)
+///////////////// WRONG CODE HERE ///////////////////////////////////////////////
+// let a =   [1, 2, 3, 4, 5,  6, "NA" ,  4,  6,  5, 6, 5, 6,]    
+// let b ={}
+// for (let i = 0 ; i <a.length; i ++) {
+//    var num= a[i];
+//     if (num== b) {
+//     num = b + 1
+//     } else {
+//         b == 1
+//     }
+//     console.log(num)
+// }
+///////////////// WRONG CODE UPPER //////////////////////////////////////////////let 
+// let word = prompt("give any word ")
+// let letter = prompt ("give any letter ")
+
+// var startfrom = []
+// for (let i = 0; i < word.length; i++) {
+//     if (word[i] == letter) {
+//         startfrom++
+//     }
+//     // console.log(`${word} = ${letter } = ${ startfrom}`)
+// }console.log(`${word} = ${letter } = ${ startfrom}`)
+
+/////////////////////////////////////////   another method /////////////////////////////////////////////////
+// let a1 = [1,4,2,5,3,3,4,5,6,7,8,1, 'aditi',  8, "kitw", "yelloj"]
+// let b1 = {}
+// for (let i = 0; i < a1.length; i++) {
+//     let num = a1[i];
+//         if ( num in b1) {
+//         b1[num] = b1[num] + 1
+//         } else {
+//         b1[num] = 1
+//         }
+// }
+// console.log(b1);
+    
+
+
+// 3 method /////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  let a = [1,2,3,4,5,6,7,8,9,10]
+//  let b ={}
+// for (let i = 0; i<a.length; i++) {
+//     let num =  a[i];
+//     b[num] = b[num] ? b[num] +1 : 1;
+// }
+// console.log(b)  
+
+
