@@ -542,23 +542,38 @@
 // console.log(arr(5))
 
 /////////////// prime no is this ////////////
-let num = parseInt(prompt("no de do "))
-if (num<=1) {
-    console.log("it is not peime no ")
-} if (num==2) {
-    console.log("ghhhvf")
-}
+// let num = parseInt(prompt("no de do "))
+// if (num<=1) {
+//     console.log("it is not peime no ")
+// } if (num==2) {
+//     console.log("ghhhvf")
+// }
 
 
-else {
-    for (let i = 2; i<num; i++) {
-        if (num%i==0) {
-           var e = ("it is not prime no  ye ")
-            break
-        } else {
-           var e = ("prime no h yeee h ye ")
+// else {
+//     for (let i = 2; i<num; i++) {
+//         if (num%i==0) {
+//            var e = ("it is not prime no  ye ")
+//             break
+//         } else {
+//            var e = ("prime no h yeee h ye ")
+//         }
+//     }
+//        console.log(e)
+ 
+// }
+
+function name1(n) {
+    if (n<2) {
+        return false
+    }else{
+        for (let i = 0; i <= n; i++) {
+            if (n>2) {
+                return true
+            }
+            
         }
     }
-    console.log(e)
- 
-}
+}console.log(name1(34))
+console.log(name1(-4))
+console.log(name1(14))
