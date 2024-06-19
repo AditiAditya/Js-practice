@@ -519,9 +519,46 @@
 
 
 
-let a = prompt("hey give any word buddu ")
-let b = prompt("give any letter ")
-for (let i= 0; i< a.length; i++) {
-    
-    
+// ////////////////// series 
+// function fibo(n){
+//     let fibo1 = [0,1]
+//     for (let i=2; i<n; i++){
+//        fibo1[i] = fibo1[i-1] + fibo1[i-2]
+        
+//     }
+//  return fibo1
+
+// }
+// console.log(fibo(5))// yha ye dekh jta h   jaise fibo (6 ) diya toh 6 tk uske length hoge sum kuch bhi ho 
+
+//////////////////////////////////////////////
+/////////factorial
+// function arr(n){
+//     let r = 1
+//     for(let i=2; i<=n; i++){
+//         r = r *i
+//     }return r
+// }
+// console.log(arr(5))
+
+/////////////// prime no is this ////////////
+let num = parseInt(prompt("no de do "))
+if (num<=1) {
+    console.log("it is not peime no ")
+} if (num==2) {
+    console.log("ghhhvf")
+}
+
+
+else {
+    for (let i = 2; i<num; i++) {
+        if (num%i==0) {
+           var e = ("it is not prime no  ye ")
+            break
+        } else {
+           var e = ("prime no h yeee h ye ")
+        }
+    }
+    console.log(e)
+ 
 }
