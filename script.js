@@ -541,6 +541,15 @@
 // }
 // console.log(arr(5))
 
+/////////////////////////////////////////////////////  facctorial another method
+function arr(num){
+    if(num===0){
+        return 1
+    }else{
+        return num*arr(num-1)
+    }
+}
+console.log(arr(7))
 /////////////// prime no is this ////////////
 // let num = parseInt(prompt("no de do "))
 // if (num<=1) {
@@ -578,3 +587,21 @@
 // }console.log(prime1(25))
 // console.log(prime1(24))
 // console.log(prime1(5))
+
+/////////////////////////////////////  / //////////////////
+
+function power(n) {
+    if (n<1) {
+        return false
+    }
+    while (n>1) {
+        if (n%2 ==1) {
+            return true
+        }
+        // return false
+    }
+ return false
+}
+console.log(power(2 ))
+console.log(power(8))
+console.log(power(5))
