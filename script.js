@@ -529,7 +529,7 @@
 //  return fibo1
 
 // }
-// console.log(fibo(5))// yha ye dekh jta h   jaise fibo (6 ) diya toh 6 tk uske length hoge sum kuch bhi ho 
+// console.log(fibo(5))// yha ye dekha  jta h  ... jaise fibo (6 ) diya toh 6 tk uske length hoge sum kuch bhi ho 
 
 //////////////////////////////////////////////
 /////////factorial
@@ -562,18 +562,19 @@
 //        console.log(e)
  
 // }
-
-function name1(n) {
-    if (n<2) {
-        return false
-    }else{
-        for (let i = 0; i <= n; i++) {
-            if (n>2) {
-                return true
-            }
-            
-        }
-    }
-}console.log(name1(34))
-console.log(name1(-4))
-console.log(name1(14))
+/////////////////////////////////////////////////////  a;lgorthem method /////////////////////
+// function prime1(n) {
+//     if (n<2) {
+//         return false
+//     }else{
+//         for (let i = 2; i <=Math.sqrt(n); i++) {
+//             if (n%i===0) {
+//                 return false
+//                 break
+//             }
+//         }
+//         return true
+//     }
+// }console.log(prime1(25))
+// console.log(prime1(24))
+// console.log(prime1(5))
