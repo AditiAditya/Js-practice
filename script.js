@@ -113,7 +113,7 @@
 // let a = [1,2,3,4,5,6,7];  /// push  add the element in the endd /// pop remove the value from the end 
 //  a.splice(1,3, )    /// slice()  two parts main he cut hote h (1,3) jo third index h woh include nhi hoge aur ye nhi array  main aajayega
 // console.log(a)          /// splice   main (first starting point , kya delet krna h  ,  "kya daln H ")
-                                     //// shift( ) remove th first elemeents in js 
+//// shift( ) remove th first elemeents in js 
 
 
 //primitive data type  -- boolean null nmber  stirng 
@@ -133,7 +133,7 @@
 // console.log(obj2)
 // console.log(obj)
 
- //// to find frequency  elements
+//// to find frequency  elements
 //  let q = [1,2,3,1,2,3,1,2,3,1,1,1,]
 //  let w = {}
 
@@ -198,7 +198,7 @@
 // return reverse == a
 // }
 
- 
+
 // console.log(aee(a))
 
 //////////////////////////////// 9 
@@ -318,7 +318,7 @@
 //nested
 // for (let index = 1; index <=5; index++) {
 //       for (let index1 = 1; index1<=  index ;  index++) {
-       
+
 //      console.log(index1)
 //       } 
 // } 
@@ -348,25 +348,25 @@
 //     if (num==1) {
 //         console.log("its neither prime nor compositive ")
 //     } 
-    
+
 
 
 //   else if(num<1) {
 //         console.log("-ve no is not allowed")
 //     }
-    
+
 //     else {
 //         for (let i = 2; i <num ; i++) {
-           
+
 //             if (num%i==0) {
 //               var element= `${num}  is not prime no `
 //                 break
 //             } else {
 //                 var element = ` ${num}  is prime no `
 //             }
-            
+
 //         }console.log(element)
-        
+
 //     }
 
 
@@ -493,7 +493,7 @@
 //         }
 // }
 // console.log(b1);
-    
+
 
 
 // 3 method /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -524,7 +524,7 @@
 //     let fibo1 = [0,1]
 //     for (let i=2; i<n; i++){
 //        fibo1[i] = fibo1[i-1] + fibo1[i-2]
-        
+
 //     }
 //  return fibo1
 
@@ -542,14 +542,14 @@
 // console.log(arr(5))
 
 /////////////////////////////////////////////////////  facctorial another method
-function arr(num){
-    if(num===0){
-        return 1
-    }else{
-        return num*arr(num-1)
-    }
-}
-console.log(arr(7))
+// function arr(num){
+//     if(num===0){
+//         return 1
+//     }else{
+//         return num*arr(num-1)
+//     }
+// }
+// console.log(arr(7))
 /////////////// prime no is this ////////////
 // let num = parseInt(prompt("no de do "))
 // if (num<=1) {
@@ -569,7 +569,7 @@ console.log(arr(7))
 //         }
 //     }
 //        console.log(e)
- 
+
 // }
 /////////////////////////////////////////////////////  a;lgorthem method /////////////////////
 // function prime1(n) {
@@ -590,18 +590,30 @@ console.log(arr(7))
 
 /////////////////////////////////////  / //////////////////
 
-function power(n) {
-    if (n<1) {
-        return false
+// function power(n) {
+//     if (n<1) {
+//         return false
+//     }
+//     while (n>1) {
+//         if (n%2 ==1) {
+//             return true
+//         }
+//         // return false
+//     }
+//  return false
+// }
+// console.log(power(2 ))
+// console.log(power(8))
+// console.log(power(5))
+
+function arr(n) {
+    if (n < 2) {
+        return n
     }
-    while (n>1) {
-        if (n%2 ==1) {
-            return true
-        }
-        // return false
+    else {
+        return arr(n - 1) + arr(n - 2)
     }
- return false
 }
-console.log(power(2 ))
-console.log(power(8))
-console.log(power(5))
+console.log(arr(6))
+console.log(arr(2))
+console.log(arr(120))
