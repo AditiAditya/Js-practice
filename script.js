@@ -1,105 +1,4 @@
 
-
-//  to finnd specific valuee 
-// let aditi = [1,2,'aee', 'hey' , 5,6,7,8]
-// console.log(aditi.includes ( 7 )  )
-
-
-//  duplicate hatane ke liye /
-// let arr = [1,2,2,3,4,5,4,5,'aple', 'mango','aple',3]
-// function arrw(arr) {
-//     return [...new Set(arr)]
-// }
-// console.log(arrw(arr));
-
-/////
-// let arr = [1,2,2,3,4,5,4,5,'aple', 'mango','aple']
-// arr.reverse(arr)
-// console.log(arr)
-///////////////  asending order main  or decnding main 
-// let arr = [1,2,2,3,4,5,4,5,'aple', 'mango','wple' , 'kite ' , 'qqee']
-// arr.sort()
-// arr.reverse()
-// console.log(arr)
-
-/////////  merge two sorted array // some error
-// let a1 = [1,4,2,5,3]
-// let a2 = [,6,9, 2,7,8]
-// a1.sort()
-// a2.sort()
-// a1.concat(a2)
-// let a3 = a1 +   a2
-
-// console.log(a3)
-// // position of array 
-// let a1 = ['aditi' , 'aer' , 'ketf' , "mwer" , 'lwe' , 'nnn' ]
-// let k = a1.indexOf('lwe')
-// console.log(k)
-
-// //// Occurences of valuse 
-// let a1 = [1,4,2,5,3,3,4,5,6,7,8,1, 'aditi',  8, "kitw", "yelloj"]
-// let b1 = {}
-// for (const i of a1) {
-//     if ( a1[i] in b1) {
-//         b1[a1[i]] = b1[a1[i]] + 1
-//     } else {
-//         b1[a1[i]] = 1
-//     }
-// }
-
-// console.log(b1);
-
-////////////////////////////  duplicate hataya + assending order main likha   ///////////////
-// let a1 = [1,4,2,5,3,3,4,5,6,7,8,1]
-// function new1(a1){
-//     return [...new Set(a1)]
-// }
-// a1.sort((a,b) => a-b)
-// console .log(new1(a1))
-
-///////////////////////////////    second largest no  with using of sort methodds /// 
-// let a1 = [1,4,2,5,3,3,4,5,16,17,8,1]
-// a1.sort((a,b) => b-a)
-// console.log(a1)
-// console.log(a1[1])
-
-/////////// by another method
-// let a1 = [1,4,2,5,3,3,4,5,16,17,8,1]
-// let  first = -Infinity ;
-// let second = -Infinity
-// for(let i=0 ; i<=a1.length-1; i++) {
-//   if (a1[i]>first) {
-//     second = first
-//     first = a1[i]
-//   } 
-// }
-// console.log(second)  ///////////////////////////// look abhi raj video for this/////
-
-//////////////////////////// even odd median     /////////////////
-// let num = [1,2,3,7,4,5]
-// num.sort((a,b) => a-b)
-// let median;
-//     if (num.length%2 !=0) {
-//         let into = Math.floor(num.length/2)
-//         median = num[into]
-//     } else {
-//             let into = Math.floor(num.length/2)
-//             median = (num[into]  +  num[into -1] )/2
-//     }
-// console.log(median)
-/////////////////////////////////////////////////////////////////////  reverse methoddddd
-// let num = [1,2,9,3,5]
-// num.sort((a,b) => a-b)
-// let median;
-//     if (num.length%2 ===0) {
-//        let into = Math.floor(num.length/2)
-//        median = (num[into] + num[into - 1])/2
-//     } else {
-//             let into = Math.floor(num.length/2)
-//             median = num[into]
-//     }
-// console.log(median)             //////////////////////  ye galat aaa rha h ////////////////
-
 //////////////////////////////////////////// sepicific no find krne ke liye /// true or false main ans aata hai iska 
 // let na = [1,2,9,3,5, 'aditi'  , 4 , "raju" , "kana"]
 // console.log(na.includes(8))
@@ -605,15 +504,61 @@
 // console.log(power(2 ))
 // console.log(power(8))
 // console.log(power(5))
+///////////////////////////////////////////////////////////////////  FABONACI SEQUENCE  YE CHL NHI RH AH 
+// function arr(n) {
+//     if (n < 2) {
+//         return n
+//     }
+//     else {
+//         return arr(n - 1) + arr(n - 2)
+//     }
+// }
+// console.log(arr(6))
+// console.log(arr(2))
+// console.log(arr(120))
+////////////////////////////////////////////  FABONIACI NUMBER
+// function  Rfaboncee(n){
+//     if (n === 0) {
+//         return 1
+//     } else {
+//         return n * arr(n-1)
+//     }
+// }
 
-function arr(n) {
-    if (n < 2) {
-        return n
-    }
-    else {
-        return arr(n - 1) + arr(n - 2)
-    }
-}
-console.log(arr(6))
-console.log(arr(2))
-console.log(arr(120))
+// console.log(Rfaboncee(0));
+// console.log(Rfaboncee(1));
+// console.log(Rfaboncee(4));
+
+////////////////  two typr of search linear or binary or recusive search also 
+//////////////////////////////////////////////////////////////   liner search  linear time complexi //////////////////////////////////////////////////////
+// let num = [1,2,3,4,5,6,7,8,9]
+// function  search(n){
+//     for (let i = 0; i <= num.length; i++) {
+        
+//         if (num[i]===n) {
+//             return i
+//         }
+//     }
+//     return -1
+// }
+// console.log(search(6))
+// console.log(search(16))
+// console.log(search(9))
+
+/////////////////////////////////////   binary search //////////
+
+// let arr = [1,9,2,8,3,7,4,6,5]
+// let arr1 = arr.sort()
+// // console.log(arr1)
+// function aqq(n) {
+//     for (let i = 0; i <= arr1.length; i++) {
+//         if (arr1[i]===n) {
+//             return i
+//         }
+        
+//     }
+//     return -1
+// }
+// console.log(aqq(2))
+// console.log(aqq(1))
+// console.log(aqq(0))
