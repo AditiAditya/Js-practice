@@ -534,7 +534,7 @@
 // let num = [1,2,3,4,5,6,7,8,9]
 // function  search(n){
 //     for (let i = 0; i <= num.length; i++) {
-        
+
 //         if (num[i]===n) {
 //             return i
 //         }
@@ -555,7 +555,7 @@
 //         if (arr1[i]===n) {
 //             return i
 //         }
-        
+
 //     }
 //     return -1
 // }
@@ -563,14 +563,53 @@
 // console.log(aqq(1))
 // console.log(aqq(0))
 
-////////////////////////////////////////  binary search simple wla 
-let a = [1,2,3,4,5,6,7]
-let find = 4
-let start  = 0;
-let end = a.length-1
+////////////////////////////////////////  binary search simple wla /////   practice ke jarurta h iss  topic per sab ke 
+// let a = [1, 2 , 5,  4 , 56,  92 , 9, 3,14,15,72]
+// a.sort((x,y) => x-y) ///   sorting is really really needed
+// let find =  29;
+// let start = 0;
+// let end = a.length - 1;
+// let position = -1;   //  yha position maine -1 de de kyuki agr koi value match na kre toh -1 aana jaruri tha issliye  
+// while (start <= end) {
+//     let mid = Math.floor((start + end) / 2)
+//     //    console.log(a1)
 
-while (start<=end) {
-    let a1  = Math.floor((start+end)/2)
-   console.log(a1)
-   break
+//     if (a[mid] === find) {
+//         position = mid
+//         break
+//     } else if (a[mid] < find ) {
+//         start = mid + 1
+//     } else {
+//         end = mid - 1
+//     }
+
+// } console.log(position)
+
+////////////////////////////   recursive binary code 
+function recursive(arr, find) {
+    return search(arr, find, 0, arr.length - 1)
+
 }
+
+function search(arr, find, start, end) {
+    if (start > end) {
+        return -1
+    }
+
+
+let mid = Math.floor((start + end  )  /  2 )
+if (arr[mid] === find) {
+    return mid
+}
+
+
+if (arr[mid] >  find) {
+      return     search(arr, find, start,  mid-1   )                                        //  return end = mid - 1
+} else {
+     return   search(arr, find,  mid + 1,   end   )                                       //return   start = mid + 1
+}
+}
+console.log(recursive([1, 2, 3, 4, 5, 6, 7, 8, 9], 6) )    //5
+console.log(recursive([1, 2, 3, 4, 5, 6, 7, 8, 9], 5))          // 4
+console.log(recursive([1, 2, 3, 4, 5, 6, 7, 8, 9], 3))             // 2
+
