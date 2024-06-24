@@ -562,3 +562,15 @@
 // console.log(aqq(2))
 // console.log(aqq(1))
 // console.log(aqq(0))
+
+////////////////////////////////////////  binary search simple wla 
+let a = [1,2,3,4,5,6,7]
+let find = 4
+let start  = 0;
+let end = a.length-1
+
+while (start<=end) {
+    let a1  = Math.floor((start+end)/2)
+   console.log(a1)
+   break
+}
