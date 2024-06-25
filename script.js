@@ -1,5 +1,5 @@
 // console.log(c)
-/////////////////////////////////////////////////////////// factorial of 
+/////////////////////////////////////////////////////////// factorial of
 // let num = prompt("give any no")
 // if (num ==0) {
 //   console.log("its factorial is always 1")
@@ -22,9 +22,9 @@
 //       for (let index1 = 1; index1<=  index ;  index++) {
 
 //      console.log(index1)
-//       } 
-// } 
-////////////////////////  prime no check 
+//       }
+// }
+////////////////////////  prime no check
 // let num = prompt("give prime no ??")
 // if (num<=1) {
 //       console.log("it is not prime no ..wheter it is prime or compositive no  ")
@@ -33,7 +33,7 @@
 //       console.log("it is prime no")
 // }
 // else {
-//       for (let i= 2; i < num; i++) 
+//       for (let i= 2; i < num; i++)
 //             if (num%i==0) {
 //                var r = `${num} it is not prime no `
 //                   break
@@ -49,7 +49,7 @@
 
 //     if (num==1) {
 //         console.log("its neither prime nor compositive ")
-//     } 
+//     }
 
 
 
@@ -137,7 +137,7 @@
 //         console.log("it is oddd")
 //     }
 // }
-/////////////////////////  ye nhi hua abhi 
+/////////////////////////  ye nhi hua abhi
 // let a = ["adiiti" , "raj" , 1, 3,4, "hum ", 444, 67, 99 ]
 // // console.log(a)
 //  let a11  = a.splice(2, 1, "drum", "guitar")
@@ -149,16 +149,16 @@
 //     let num =  a[i];
 //     b[num] = b[num] ? b[num] +1 : 1;
 // }
-// console.log(b)  
+// console.log(b)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// let a =   [1, 2, 3, 4, 5,  6, "NA" ,  4,  6,  5, 6, 5, 6,]    
+// let a =   [1, 2, 3, 4, 5,  6, "NA" ,  4,  6,  5, 6, 5, 6,]
 // console.log(a)
 // let a1 =a.splice(6,2,'naha')
 // console.log(a1)
 
 ///////////////// WRONG CODE HERE ///////////////////////////////////////////////
-// let a =   [1, 2, 3, 4, 5,  6, "NA" ,  4,  6,  5, 6, 5, 6,]    
+// let a =   [1, 2, 3, 4, 5,  6, "NA" ,  4,  6,  5, 6, 5, 6,]
 // let b ={}
 // for (let i = 0 ; i <a.length; i ++) {
 //    var num= a[i];
@@ -169,7 +169,7 @@
 //     }
 //     console.log(num)
 // }
-///////////////// WRONG CODE UPPER //////////////////////////////////////////////let 
+///////////////// WRONG CODE UPPER //////////////////////////////////////////////let
 
 
 // let word = prompt("give any word ")
@@ -205,7 +205,7 @@
 //     let num =  a[i];
 //     b[num] = b[num] ? b[num] +1 : 1;
 // }
-// console.log(b)  
+// console.log(b)
 
 
 //// practice of all 3 method ///
@@ -221,7 +221,7 @@
 
 
 
-// ////////////////// series 
+// ////////////////// series
 // function fibo(n){
 //     let fibo1 = [0,1]
 //     for (let i=2; i<n; i++){
@@ -231,7 +231,7 @@
 //  return fibo1
 
 // }
-// console.log(fibo(5))// yha ye dekha  jta h  ... jaise fibo (6 ) diya toh 6 tk uske length hoge sum kuch bhi ho 
+// console.log(fibo(5))// yha ye dekha  jta h  ... jaise fibo (6 ) diya toh 6 tk uske length hoge sum kuch bhi ho
 
 //////////////////////////////////////////////
 /////////factorial
@@ -307,7 +307,7 @@
 // console.log(power(2 ))
 // console.log(power(8))
 // console.log(power(5))
-///////////////////////////////////////////////////////////////////  FABONACI SEQUENCE  YE CHL NHI RH AH 
+///////////////////////////////////////////////////////////////////  FABONACI SEQUENCE  YE CHL NHI RH AH
 // function arr(n) {
 //     if (n < 2) {
 //         return n
@@ -332,7 +332,7 @@
 // console.log(Rfaboncee(1));
 // console.log(Rfaboncee(4));
 
-////////////////  two typr of search linear or binary or recusive search also 
+////////////////  two typr of search linear or binary or recusive search also
 //////////////////////////////////////////////////////////////   liner search  linear time complexi //////////////////////////////////////////////////////
 // let num = [1,2,3,4,5,6,7,8,9]
 // function  search(n){
@@ -366,13 +366,13 @@
 // console.log(aqq(1))
 // console.log(aqq(0))
 
-////////////////////////////////////////  binary search simple wla /////   practice ke jarurta h iss  topic per sab ke 
+////////////////////////////////////////  binary search simple wla /////   practice ke jarurta h iss  topic per sab ke
 // let a = [1, 2 , 5,  4 , 56,  92 , 9, 3,14,15,72]
 // a.sort((x,y) => x-y) ///   sorting is really really needed
 // let find =  29;
 // let start = 0;
 // let end = a.length - 1;
-// let position = -1;   //  yha position maine -1 de de kyuki agr koi value match na kre toh -1 aana jaruri tha issliye  
+// let position = -1;   //  yha position maine -1 de de kyuki agr koi value match na kre toh -1 aana jaruri tha issliye
 // while (start <= end) {
 //     let mid = Math.floor((start + end) / 2)
 //     //    console.log(a1)
@@ -388,7 +388,7 @@
 
 // } console.log(position)
 
-////////////////////////////   recursive binary code 
+////////////////////////////   recursive binary code
 // function recursive(arr, find) {
 //     return search(arr, find, 0, arr.length - 1)
 
@@ -445,9 +445,34 @@
 // console.log(binaryreecursive([1, 2, 3, 4, 5, 6, 7, 8], 8))  /// 7
 // console.log(binaryreecursive([1, 2, 3, 4, 5, 6, 7, 8], 1))   //  0
 // console.log(binaryreecursive([1, 2, 3, 4, 5, 6, 7, 8], 22))   // -1
-// console.log(binaryreecursive([1, 2, 3, 4, 5, 6, 7, 8], 4)) 
+// console.log(binaryreecursive([1, 2, 3, 4, 5, 6, 7, 8], 4))
 
 ////////////   4 types of sorting algorithems
 // let a =[1, 2, 3, 4,-5, 6, -7, 8]
 // let a1 = a.sort((x,y)  => x-y)
 // console.log(a1)
+
+// primitive data type  -- boolean null nmber  stirng 
+/*   let a = "aditi";
+let b  = 'abhi';
+a= b
+console.log(a)  */
+/////////////////////////////////  bubble sort /////////////////////////////
+/*  const arr = [1,3,5,7,9,8,6,4,2]
+function bubblesort(arr) {
+    let swapped
+    do {
+        swapped = false
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                let temp = arr[i]
+                arr[i] = arr[i + 1]
+                arr[i + 1] = temp
+                swapped = true
+            }
+        }
+    } while (swapped);
+}
+bubblesort(arr)
+console.log(arr)   */
+
