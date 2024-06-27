@@ -425,9 +425,6 @@
 //     if (start > end) {
 //         return -1
 //     }
-
-
-
 // let mid = Math.floor((start + end) / 2)
 // if (arr[mid] === find) {
 //     return mid;
@@ -476,3 +473,67 @@ function bubblesort(arr) {
 bubblesort(arr)
 console.log(arr)   */
 
+///////////////////////////////////   insertion sort 
+
+
+
+
+
+////////////////   quick sort   /// re practice 
+/*  let arr = [1, -2, 3, 34, 6, 30, -12, -99]
+function app(arr) {
+    if (arr.length < 2) {
+        return arr
+    }
+    let p = arr[arr.length - 1]
+    let left = [];
+    let right = [];
+
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] < p) {
+            left.push(arr[i])
+        } else {
+            right.push(arr[i])
+        }
+
+    }
+    return [...app(left), p, ...app(right)]
+}
+console.log(app(arr))  */
+
+////////////////////////////////     merge sort   /////// re practice 
+// let arr = [1, -3, -5, 6, 4, 3]
+// function aap(arr) {
+//     if (arr.length < 2) {
+//         return arr
+//     }
+//     let mid = Math.floor(arr.length / 2);
+//     let left = arr.slice(0, mid);
+//     let right = arr.slice(mid);
+//     return merge(aap(left) , aap(right))
+// }
+
+// function merge(left, right) {
+// let sortadder = [];
+//     while (left.length && right.length) {
+//         if (left[0] <= right[0]) {
+//             sortadder.push(left . shift())
+//         } else {
+//             sortadder.push(right .shift())
+//         }
+//     }
+//     return [...sortadder, ...left , ...right]
+// }
+// console.log(aap(arr));
+
+/////////////////////////////////////////  cartisian prbl ///////////re practice 
+// let a = [1,2]
+// let b = [ 3,4,]
+// let c = [];
+// for(let i=0; i<a.length; i++){
+//     for (let j = 0; j< b.length; j++) {
+//       c.push([a[i] , b[j]])
+        
+//     }
+// }
+// console.log(c)
