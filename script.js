@@ -307,29 +307,30 @@
 // console.log(power(2 ))
 // console.log(power(8))
 // console.log(power(5))
-///////////////////////////////////////////////////////////////////  FABONACI SEQUENCE  YE CHL NHI RH AH
+/////////////         recursive    FABONACI SEQUENCE  YE CHL NHI RH AH
+///   ////////////////////////////   fabonaacci main 1+1 +2+3  ' +' hota h 
 // function arr(n) {
-//     if (n < 2) {
-//         return n
-//     }
-//     else {
-//         return arr(n - 1) + arr(n - 2)
-//     }
-// }
-// console.log(arr(6))
-// console.log(arr(2))
-// console.log(arr(120))
-////////////////////////////////////////////  FABONIACI NUMBER
-// function  Rfaboncee(n){
-//     if (n === 0) {
-//         return 1
-//     } else {
-//         return n * arr(n-1)
-//     }
-// }
+//   if (n < 2) {
+//       return n
+//    }
+//    else{
 
-// console.log(Rfaboncee(0));
-// console.log(Rfaboncee(1));
+//     return  arr(n - 1) + arr(n - 2)
+//  }
+//  }
+//  console.log(arr(6))
+//  console.log(arr(2))   
+
+////////////////////////////////////////////            recursive     Factorial   of NUMBER issmain intooo hota h 
+// function  Rfaboncee(n){
+// if (n === 0) {
+//      return 1
+//   } else {
+//   return n * Rfaboncee(n-1)
+//  } }
+
+//  console.log(Rfaboncee(0));
+// console.log(Rfaboncee(5));
 // console.log(Rfaboncee(4));
 
 ////////////////  two typr of search linear or binary or recusive search also
@@ -533,7 +534,127 @@ console.log(app(arr))  */
 // for(let i=0; i<a.length; i++){
 //     for (let j = 0; j< b.length; j++) {
 //       c.push([a[i] , b[j]])
-        
+
 //     }
 // }
 // console.log(c)
+//////////////////////////////////////////////////// climbing staires /////////////
+// let a = 4
+// function arr(n) {
+//     var a = [1, 2]
+//     for (let i = 2; i <= n; i++) {
+//      a[i] = a[i-1]  +    a[i -2]
+//     }
+//     return a[n]
+// }
+
+// console.log(arr(1))
+
+////////////////////////////  tower of hanoie bresl this /// baad main keuge 
+// function arr(n , from , using , to) {
+//     if (n === 1 ) {
+//             console.log(` ${n} is transfer from ${from} to ${to}`)
+//     }
+//     arr((n-1) , from , using , to) 
+//             console.log(` ${n} is travel from ${from} to ${using}`)
+
+//     arr((n-1) ,from , using , to )
+//         console.log(`$ {n }is travel from ${from} to ${using}`)
+
+//     arr((n-1) , from, using , to)
+//         console.log(`  ${ n} is travel from${from} to ${to}` )
+
+//         arr((n-1) , from , using , to)
+//         console.log(` ${n} is trravel from ${using} to ${to}`)
+
+//         arr((n-1) , from , using , to)
+//         console.log(`(n-1) travel from ${using} to ${to}`)
+// }
+// arr(3 , 'A'  , 'B'  , 'C')
+
+//////////////////////////////////////////   practice questions 
+// fabonoic no 
+// let  a1 = parseInt(prompt("give any niumber "))
+// function arr(a1) {
+//     if (a1 < 2) {
+//         return a1
+//     } else {
+//        return arr(a1- 1 ) + arr(a1 - 2)
+
+//         }
+//     }
+
+// console.log(arr(a1))
+
+//fabonoic series without recursion 
+// let a = parseInt(prompt("give no "))
+// function arr(a) {
+//     const a11 = [0,1]
+//         for(let i=2 ; i<=a ; i++){
+//             a11[i] = a11[i-1] + a11[i-2]
+//         }return a11
+//     }
+// console.log(arr(a))
+
+/// prime no 
+// let a = parseInt(prompt("give any no "))
+// function arr(a) {
+//     if (a === 1) {
+//         return true
+//     } if (a === 2) {
+//         return true
+//     }
+//     else {
+//         for (let i = 2; i < a; i++) {
+//             if (a % i == 0) {
+//                 return false;
+//                 break;
+//             }
+           
+            
+//         }return true
+//     }
+  
+// } console.log(arr(a))
+
+////////////////////   ek jaise no
+// let a = prompt("give same word")
+// function arr(a) {
+//    let a1 = a.split("").reverse().join("")
+//    return a1===a ////////////  iska matlab check krne se hota h ke ye nhi h shi toh false warna true 
+// }
+// console.log(arr(a))
+
+
+//////factorial 
+// let a = parseInt(prompt("give any no "))
+// function arr(a) {
+//     if (a<1) {
+//         return a
+//     }
+//     var add = 1
+//     for (let i = 2; i <= a; i++) {
+//         add = add*i
+        
+//     }return add
+// }
+// console.log(arr(a))
+
+/////////////////////   amarstrong no 
+// let num = prompt("give no ")
+// let sum = 0
+// let temp = num
+// let length = num.toString().length
+//     while(temp>0){
+//         var d = temp%10;
+        
+//      sum += d** length 
+     
+//      temp = parseInt(temp/10)
+     
+//     }
+//     if(sum==num){
+//         console.log("it is amarstrong no ")
+//     }else{
+//         console.log("it is not amarstrong number ")
+//     }
