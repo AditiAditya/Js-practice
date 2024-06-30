@@ -1,5 +1,4 @@
-// console.log(c)
-/////////////////////////////////////////////////////////// factorial of
+//////////////////////// factorial of         /////////////////////////
 // let num = prompt("give any no")
 // if (num ==0) {
 //   console.log("its factorial is always 1")
@@ -17,6 +16,7 @@
 //   }
 
 //////////////////////////////
+
 //nested
 // for (let index = 1; index <=5; index++) {
 //       for (let index1 = 1; index1<=  index ;  index++) {
@@ -51,8 +51,6 @@
 //         console.log("its neither prime nor compositive ")
 //     }
 
-
-
 //   else if(num<1) {
 //         console.log("-ve no is not allowed")
 //     }
@@ -85,6 +83,7 @@
 //   }
 // }console.log(b )
 // console.log(c)
+
 
 //////////////////////////
 // var a = [1,2,3,4,5,6,7,8,9,10]
@@ -456,23 +455,23 @@ let b  = 'abhi';
 a= b
 console.log(a)  */
 /////////////////////////////////  bubble sort /////////////////////////////
-/*  const arr = [1,3,5,7,9,8,6,4,2]
-function bubblesort(arr) {
-    let swapped
-    do {
-        swapped = false
-        for (let i = 0; i < arr.length - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                let temp = arr[i]
-                arr[i] = arr[i + 1]
-                arr[i + 1] = temp
-                swapped = true
-            }
-        }
-    } while (swapped);
-}
-bubblesort(arr)
-console.log(arr)   */
+//  const arr = [1,3,5,7,9,8,6,4,2]
+// function bubblesort(arr) {
+//     let swapped
+//     do {
+//         swapped = false
+//         for (let i = 0; i < arr.length - 1; i++) {
+//             if (arr[i] > arr[i + 1]) {
+//                 let temp = arr[i]       /// let c = a // 2 toh ab c = 3
+//                 arr[i] = arr[i + 1]         //  a = b          /// b =2 toh a =2
+//                 arr[i + 1] = temp        ///    b = c        ///  c jo 3 tha toh ab b = 3
+//                 swapped = true
+//             }
+//         }
+//     } while (swapped);
+// }
+// bubblesort(arr)
+// console.log(arr)   
 
 ///////////////////////////////////   insertion sort 
 
@@ -610,11 +609,11 @@ console.log(app(arr))  */
 //                 return false;
 //                 break;
 //             }
-           
-            
+
+
 //         }return true
 //     }
-  
+
 // } console.log(arr(a))
 
 ////////////////////   ek jaise no
@@ -635,7 +634,7 @@ console.log(app(arr))  */
 //     var add = 1
 //     for (let i = 2; i <= a; i++) {
 //         add = add*i
-        
+
 //     }return add
 // }
 // console.log(arr(a))
@@ -647,14 +646,60 @@ console.log(app(arr))  */
 // let length = num.toString().length
 //     while(temp>0){
 //         var d = temp%10;
-        
+
 //      sum += d** length 
-     
+
 //      temp = parseInt(temp/10)
-     
+
 //     }
 //     if(sum==num){
 //         console.log("it is amarstrong no ")
 //     }else{
 //         console.log("it is not amarstrong number ")
 //     }
+
+////////////  sum of numbers 
+// let a = [1,2,2]
+//     let sum = 0 
+//    for(let i = 0 ; i <a.length ; i++){
+//      sum += a[i]
+
+//    }
+
+//  console.log(sum)
+
+
+
+
+//////////////   swap two numbers 
+
+// let a =  77
+// let  b = 66
+// console.log(a)
+// console.log(b)
+// a = b;
+// b= 77;
+// console.log(a)
+// console.log(b)
+
+////////////////////////////////  bubble sort 
+ var a = [1, 3, 5, 7, 9, 2, 4, 6, 8]
+
+function arr1( a) {
+   
+    let swapped
+    do{
+            swapped = false
+        for (let i = 0; i < a.length-1; i++) {
+            if (a[i] > a[i + 1]) {
+                let tem = a[i];  /// temp 3 a = 2 
+                a[i] = a[i+1];
+                a[i+1] = tem
+             swapped = true
+            }
+        }
+    }while(swapped)
+}
+arr1(a);
+console.log(a )  
+
