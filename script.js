@@ -45,9 +45,9 @@ console.log(output1)  */
 
 ////////    HOME WORK ////////
 /// index se hum le niklate h ke koi element kis number pr hai 
-let a = [1,3,5,7,9,2,4,6,8, 'aditi']
-// let s = 
-a.sort()
+// let a = [1,3,5,7,9,2,4,6,8, 'aditi']
+// // let s = 
+// a.sort()
 
 // let d = s.length 
 // console.log(a.indexOf(9))
@@ -59,7 +59,7 @@ a.sort()
 // let a1 = a.filter((x) => x ===5 )
 
 // console.log(  a1 , a.indexOf(5))
-console.log(a)
+// console.log(a)
 // for (const item of a) {
 //     console.log(item)
 // }
@@ -68,30 +68,53 @@ console.log(a)
 // let f = a.toString()
 // console.log(f)
 
-let b  = [11,13,14,17,12,16]
-b.sort()
-console.log(b)
-let r = a.concat(b)
-console.log(r)
-/////////   from string to array    we use split method aur Array.from(c)  method
-let c = 'hogi aditi tiwari  ke jeet '
-// let w = Array.from(c)
-let w = c.split(' '  )
-console.log(w)
+// let b  = [11,13,14,17,12,16]
+// b.sort()
+// console.log(b)
+// let r = a.concat(b)
+// console.log(r)
+// /////////   from string to array    we use split method aur Array.from(c)  method
+// let c = 'hogi aditi tiwari  ke jeet '
+// // let w = Array.from(c)
+// let w = c.split(' '  )
+// console.log(w)
 
-//// to find array is empty or not 
-// let u = [] 
-// if (u.length === 0) {
-//     console.log("arr is empty")
-// } else {
-//     console.log("arr isn't empty")
-// }
-// for copy 
-// let u = Array.from(a)
-// console.log(u)
+// //// to find array is empty or not 
+// // let u = [] 
+// // if (u.length === 0) {
+// //     console.log("arr is empty")
+// // } else {
+// //     console.log("arr isn't empty")
+// // }
+// // for copy 
+// // let u = Array.from(a)
+// // console.log(u)
+// // console.log(a)
+
+// ////  for inset sepecific value // AGR LET DELETED KE KE MATLAB DUBARA LIKH KR KRA TOH * DELETED ITEM AAYEGE ** AUR DIRECT KIYA TOH PURA ARRAY AAYEGA
+// let deleted  = a.splice(4 , 2 , )
+// console.log(deleted)
 // console.log(a)
 
-////  for inset sepecific value // AGR LET DELETED KE KE MATLAB DUBARA LIKH KR KRA TOH * DELETED ITEM AAYEGE ** AUR DIRECT KIYA TOH PURA ARRAY AAYEGA
-let deleted  = a.splice(4 , 2 , )
-console.log(deleted)
-console.log(a)
+//////////////////////////   2nd part 
+//  to remove dublicate watch decode 
+// let dublicate = [1,3,5,7,7,5,2,3,9,1,1,2,3,4,5,6,7,8,9,10]
+// dublicate.filter((x , y )  => x - y  )
+// console.log(dublicate)
+
+// let methodnewset = [...new Set(dublicate)];
+// console.log(methodnewset)
+
+
+// let forsort =  dublicate.filter((x , y )  => {
+// return dublicate.indexOf(x) == y
+// })
+// console.log(forsort)
+
+// let s = [1,2,4,5,6,7,8,9,10] ; 
+// let total = ((s.length+1)  * ( s.length + 2 ))  /  2 ;
+// for(let i = 0 ; i < s.length ; i++){
+//     total = total - s[i]
+// }
+
+// console.log(total)
