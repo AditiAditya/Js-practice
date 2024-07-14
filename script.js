@@ -118,3 +118,14 @@ console.log(output1)  */
 // }
 
 // console.log(total)
+
+
+//////////////////////////////    target typeee  question 
+// let a = [1,2,3,4,5]
+// let x = a[0]
+// x = 1
+// for(let i = 1 ; i <a.length -1 ; i++){
+//     a[i-1] = a[i]
+//     a[a.length(a) - 1]  =  x
+// }
+// console.log(x)
