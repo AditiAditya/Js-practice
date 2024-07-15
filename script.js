@@ -129,3 +129,136 @@ console.log(output1)  */
 //     a[a.length(a) - 1]  =  x
 // }
 // console.log(x)
+
+
+
+
+///////////////////////////  test ////////////////////////////////////////
+// let a = prompt("give an array ???")
+// let q = a.toString()
+// function arr(q) {
+//     let w = q.split("").reverse().join('')
+//     return w 
+// }
+// console.log(a);
+// console.log(arr(q)) ;    /////////////   complete
+
+
+/// 2 
+// let a = prompt("give a word  ??")
+// function arr(a) {
+//     let check = a.split("").reverse().join("")
+//     return check ===a
+// }
+// console.log(arr(a))  /////////   its work 
+
+
+//// 3  
+
+
+// for (var i = 1; i < 100; i++) {
+//     if (i % 3 === 0) {
+//         console.log(`${i} fizz`)
+//     }
+
+//     if (i % 5 === 0) {
+//         console.log(`${i} buzz`)
+//     }
+
+//     else {
+//         console.log(`${i} buzzfizz`)
+//     }
+
+// }
+
+
+
+
+
+
+
+
+////////////  4
+
+// let a = [1,5,7,8,2,3,4,9]
+// a.sort()
+// console.log(a)
+// console.log(a.indexof(-1) )
+
+/////////////////  5
+let a = [1,5,7,8,8,2,3,3,4,1,1,2,3,4,3,2,1,1,5,9]
+a.sort()
+function arr(a) {
+    let w = [...new Set(a)]
+    return w
+}
+console.log(arr(a))
+
+
+//////  6
+// let a = prompt("give an no???")
+
+// function arrr(a) {
+
+//     if (a === 1) {
+//         return a
+//     }
+
+//     if (a < 1) {
+//         console.log(`${a}PLEASE ENTER VALID NO `)
+//     }
+
+//     if (a > 1) {
+//         let k
+//         for (let i = 1; i <= a; i++) {
+//             k = k * i
+//             return k
+//         }
+//     }
+
+// }
+// console.log(a)
+// console.log(arrr(a))
+
+
+
+
+////////////  7
+// let a = prompt("give any no???")
+// function arr(a) {
+//     if (a===1) {
+//         console.log(`${a} enter positive no only `)
+//     }
+// for (let i = 0; i<a.length; i++) {
+
+//   if(a%2===0){
+//         return  false
+
+//     }
+// break
+//    else{
+//        return true
+//     }
+// }
+
+// }
+
+// console.log(arr(a))
+
+
+////////  /// 8
+// let a = prompt("give any no???")
+
+// function  arr(a) {
+//     if (a < 1) {
+//     console.log(`${a}  give valid values`)
+// }
+// if(a>1){
+//     let r =1 ;
+//     for (let i =2  ; i < a.length ; i++) {
+//           r = r + a[i]
+//          return r
+//     }
+// }
+// }
+// console.log(arr(a))
