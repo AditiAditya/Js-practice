@@ -44,3 +44,6 @@ console.log(output1)  */
 // remove --- O(1)
 
 
+const a = new Map([['a', 1] , ['b' , 2 ]])
+a.add  ('c' , 3) ; 
+console.log(a)
