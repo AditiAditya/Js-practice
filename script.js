@@ -44,6 +44,47 @@ console.log(output1)  */
 // remove --- O(1)
 
 
-const a = new Map([['a', 1] , ['b' , 2 ]])
-a.add  ('c' , 3) ; 
-console.log(a)
+// const a = new Map([['a', 1] , ['b' , 2 ]])
+// a.add  ('c' , 3) ; 
+// console.log(a)
+
+class nodes{
+    constructor(value){
+        this.value = value;
+        this.next = null
+    }
+}
+
+class linked{
+    constructor(){
+        this.head = null ;
+        this.size = 0 ; 
+    }
+
+    isempty(){
+        return this.isempty===0
+    }
+
+    issize(){
+        return this.size
+    }
+
+    prepand(value) {
+        const node = new nodes(value)
+        if(this.isempty()){
+            this.head = node
+        }
+        else{
+            node.next = this.head
+            this.head = node 
+        }
+        this.issize++
+    }
+}
+
+let link = new linked();
+console.log(' size  of this link is' , link.issize())
+console.log(' is this empty or not' , link.isempty())
+list.prepand(10)
+list.prepand(20)
+list.prepand(30)
