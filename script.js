@@ -48,43 +48,79 @@ console.log(output1)  */
 // a.add  ('c' , 3) ; 
 // console.log(a)
 
-class nodes{
-    constructor(value){
+class nodes {
+    constructor(value) {
         this.value = value;
         this.next = null
     }
 }
 
-class linked{
-    constructor(){
-        this.head = null ;
-        this.size = 0 ; 
+class linked {
+    constructor() {
+        this.head = null;
+        this.size = 0;
     }
 
-    isempty(){
-        return this.isempty===0
+    isempty() {
+        return this.isempty === 0
     }
 
-    issize(){
+    issize() {
         return this.size
     }
 
-    prepand(value) {
+    append(value) {
         const node = new nodes(value)
-        if(this.isempty()){
+        if (this.isempty()) {
             this.head = node
-        }
-        else{
-            node.next = this.head
-            this.head = node 
+        } else {
+            let pre = this.head
+            while (pre.next) {
+                pre = pre.next
+            }
+            pre.next = node
         }
         this.issize++
     }
+
+
+    prepand(value) {
+        const node = new nodes(value)
+        if (this.isempty()) {
+            this.head = node
+        }
+        else {
+            node.next = this.head
+            this.head = node
+        }
+        this.issize++
+    }
+    print() {
+        if (this.isempty()) {
+            console.log("this is emply node")
+        }
+        else {
+            let curr = this.head
+            let listvalues = ''
+            while (curr) {
+                listvalues += `${curr.value} `
+                curr = curr.next
+            }
+            console.log(listvalues)
+        }
+    }
+
 }
 
 let link = new linked();
-console.log(' size  of this link is' , link.issize())
-console.log(' is this empty or not' , link.isempty())
-list.prepand(10)
-list.prepand(20)
-list.prepand(30)
+console.log(' size  of this link is', link.issize())
+console.log(' is this empty or not', link.isempty())
+
+link.print()
+
+link.append(10)
+link.print()
+
+link.append(20)
+link.append(30)
+link.print()
