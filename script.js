@@ -48,6 +48,8 @@ console.log(output1)  */
 // a.add  ('c' , 3) ; 
 // console.log(a)
 
+
+
 class nodes {
     constructor(value) {
         this.value = value;
@@ -71,6 +73,7 @@ class linked {
 
     append(value) {
         const node = new nodes(value)
+
         if (this.isempty()) {
             this.head = node
         } else {
@@ -80,6 +83,7 @@ class linked {
             }
             pre.next = node
         }
+
         this.issize++
     }
 
@@ -118,9 +122,12 @@ console.log(' is this empty or not', link.isempty())
 
 link.print()
 
+
 link.append(10)
+
 link.print()
+
 
 link.append(20)
 link.append(30)
-link.print()
+link.print( )
