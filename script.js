@@ -50,84 +50,137 @@ console.log(output1)  */
 
 
 
-class nodes {
-    constructor(value) {
-        this.value = value;
-        this.next = null
+// class nodes {
+//     constructor(value) {
+//         this.value = value;
+//         this.next = null
+//     }
+// }
+
+// class linked {
+//     constructor() {
+//         this.head = null;
+//         this.size = 0;
+//     }
+
+//     isempty() {
+//         return this.isempty === 0
+//     }
+
+//     issize() {
+//         return this.size
+//     }
+
+//     append(value) {
+//         const node = new nodes(value)
+
+//         if (this.isempty()) {
+//             this.head = node
+//         } else {
+//             let pre = this.head
+//             while (pre.next) {
+//                 pre = pre.next
+//             }
+//             pre.next = node
+//         }
+
+//         this.issize++
+//     }
+
+
+//     prepand(value) {
+//         const node = new nodes(value)
+//         if (this.isempty()) {
+//             this.head = node
+//         }
+//         else {
+//             node.next = this.head
+//             this.head = node
+//         }
+//         this.issize++
+//     }
+//     print() {
+//         if (this.isempty()) {
+//             console.log("this is emply node")
+//         }
+//         else {
+//             let curr = this.head
+//             let listvalues = ''
+//             while (curr) {
+//                 listvalues += `${curr.value} `
+//                 curr = curr.next
+//             }
+//             console.log(listvalues)
+//         }
+//     }
+
+// }
+
+// let link = new linked();
+// console.log(' size  of this link is', link.issize())
+// console.log(' is this empty or not', link.isempty())
+
+// link.print()
+
+
+// link.append(10)
+
+// link.print()
+
+
+// link.append(20)
+// link.append(30)
+// link.print( )
+
+
+// hash table 
+class hashtable {
+    constructor(size) {
+        this.table = new Array(size)
+        this.size = size
+    }
+
+
+    hash(key) {
+        let total = 0;
+        for (let i = 0; i < key.length; i++) {
+            total += key.charCodeAt()
+        }
+        return total % this.size
+    }
+
+    set(key, value) {
+        const index = this.hash(key)
+        this.table[index] = value
+    }
+
+    get(key) {
+        const index = this.hash(key)
+        return this.table[index]
+    }
+
+    remove(key) {
+        const index = this.hash(key)
+        this.table[index] = undefined
+    }
+
+    display() {
+        for (let i = 0; i < this.table.length; i++) {
+            if (this.table[i]) {
+                console.log(i, this.table[i]);
+            }
+        }
     }
 }
 
-class linked {
-    constructor() {
-        this.head = null;
-        this.size = 0;
-    }
 
-    isempty() {
-        return this.isempty === 0
-    }
+const table = new hashtable(50)
 
-    issize() {
-        return this.size
-    }
-
-    append(value) {
-        const node = new nodes(value)
-
-        if (this.isempty()) {
-            this.head = node
-        } else {
-            let pre = this.head
-            while (pre.next) {
-                pre = pre.next
-            }
-            pre.next = node
-        }
-
-        this.issize++
-    }
+table.set("name " , "aditi")
+table.set("age" , 18)
+table.display()
 
 
-    prepand(value) {
-        const node = new nodes(value)
-        if (this.isempty()) {
-            this.head = node
-        }
-        else {
-            node.next = this.head
-            this.head = node
-        }
-        this.issize++
-    }
-    print() {
-        if (this.isempty()) {
-            console.log("this is emply node")
-        }
-        else {
-            let curr = this.head
-            let listvalues = ''
-            while (curr) {
-                listvalues += `${curr.value} `
-                curr = curr.next
-            }
-            console.log(listvalues)
-        }
-    }
-
-}
-
-let link = new linked();
-console.log(' size  of this link is', link.issize())
-console.log(' is this empty or not', link.isempty())
-
-link.print()
-
-
-link.append(10)
-
-link.print()
-
-
-link.append(20)
-link.append(30)
-link.print( )
+console.log(table.get("name "))
+table.set("mame" , "clark")
+table.display()
